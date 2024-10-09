@@ -72,8 +72,8 @@ export default {
     mountElement() {
       const domEl = this.domElement
       this.stripeElement = createElement(this.elements, this.type, this.options)
-      this.stripeElement.mount(domEl)
       this.$el.appendChild(domEl)
+      this.stripeElement.mount(domEl)
 
       return this.stripeElement
     },
